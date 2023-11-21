@@ -2,8 +2,7 @@ apiVersion: services.cloud.sap.com/v1alpha1
 kind: ServiceInstance
 metadata:
   name: btp-auditlog
-  labels:
-    cic.sap.com/managed-by: di-cs-meta
+  namespace: cdf-dev
 spec:
   serviceOfferingName: auditlog
   servicePlanName: oauth2
