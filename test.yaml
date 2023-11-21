@@ -1,0 +1,2 @@
+apiVersion: services.cloud.sap.com/v1
+kind: ServiceInstance
