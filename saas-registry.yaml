@@ -1,8 +1,8 @@
-    apiVersion: services.cloud.sap.com/v1
-    kind: ServiceInstance
-    metadata:
-        name: SaaS Provisioning Service
-    spec:
-        serviceOfferingName: saas-registry
-        servicePlanName: application
-        externalName: cdf-saas-provisioning
+apiVersion: services.cloud.sap.com/v1
+kind: ServiceInstance
+metadata:
+    name: SaaS Provisioning Service
+spec:
+    serviceOfferingName: saas-registry
+    servicePlanName: application
+    externalName: cdf-saas-provisioning
