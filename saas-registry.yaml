@@ -1,7 +1,7 @@
 apiVersion: services.cloud.sap.com/v1
 kind: ServiceInstance
 metadata:
-    name: SaaS Provisioning Service
+    name: cdf-saas-provision
     namespace: cdf-dev
 spec:
     serviceOfferingName: saas-registry
