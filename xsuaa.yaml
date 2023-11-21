@@ -1,0 +1,18 @@
+---
+apiVersion: services.cloud.sap.com/v1
+kind: ServiceInstance
+metadata:
+    name: cdf-xsuaa
+    namespace: cdf-dev
+spec:
+    serviceOfferingName: xsuaa
+    servicePlanName: application
+    parameters:
+        xsappname: cdf-demo
+        description: cdf demo app
+        tenant-mode: shared
+        scopes:
+            - name: $XSAPPNAME.Display
+              description: Display data
+            - name: $XSAPPNAME.Update
+              description: Update data
