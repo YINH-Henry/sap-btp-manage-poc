@@ -1,0 +1,30 @@
+POST https://service-manager.cfapps.us20.hana.ondemand.com/v1/service_instances
+Content-Type: application/json
+Authorization: Bearer {{auth_token}}
+async: false
+
+{
+  "name": "xsuaa-btp-management-api",
+  "service_offering_name": "xsuaa",
+  "service_plan_name": "application",
+  "parameters": {
+    "xsappname": "cdf-xsuaa-restapi",
+    "description": "api created xsuaa",
+    "tenant-mode": "shared",
+    "scopes": [
+      {
+        "name": "$XSAPPNAME.Display",
+        "description": "Display Data"
+      },
+      {
+        "name": "$XSAPPNAME.Update",
+        "description": "Update Data"
+      }
+    ]
+  }
+}
+
+###
+GET https://service-manager.cfapps.us20.hana.ondemand.com/v1/service_instances
+Authorization: Bearer {{auth_token}}
+###

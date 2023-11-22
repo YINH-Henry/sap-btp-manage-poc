@@ -1,0 +1,15 @@
+{
+  "xsappname": "cdf-xsuaa-manual",
+  "description": "manual created xsuaa",
+  "tenant-mode": "shared",
+  "scopes": [
+    {
+      "name": "$XSAPPNAME.Display",
+      "description": "Display Data"
+    },
+    {
+      "name": "$XSAPPNAME.Update",
+      "description": "Update Data"
+    }
+  ]
+}
