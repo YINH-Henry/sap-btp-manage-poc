@@ -1,0 +1,19 @@
+{
+  "allow_access": [
+    "20.23.97.244"
+  ],
+  "allowed_spark_clusters": [],
+  "auto_create_topics_enable": true,
+  "cores_per_broker": 2,
+  "disk_per_broker": "500G",
+  "dynatrace_api_token": "",
+  "dynatrace_api_url": "",
+  "dynatrace_enabled": false,
+  "dynatrace_environment_id": "",
+  "log_retention_hours": 72,
+  "message_max_bytes": "1048588",
+  "min_insync_replicas": 2,
+  "number_of_brokers": 3,
+  "productive": false,
+  "public_ip": false
+}

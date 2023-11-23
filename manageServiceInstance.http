@@ -28,3 +28,33 @@ async: false
 GET https://service-manager.cfapps.us20.hana.ondemand.com/v1/service_instances
 Authorization: Bearer {{auth_token}}
 ###
+
+POST https://service-manager.cfapps.us20.hana.ondemand.com/v1/service_instances
+Content-Type: application/json
+Authorization: Bearer {{auth_token}}
+async: true
+
+{
+  "name": "cdf-btp-kafka",
+  "service_offering_name": "kafka",
+  "service_plan_name": "standard",
+  "parameters": {
+    "allow_access": [
+      "100.104.0.0/13"
+    ],
+    "allowed_spark_clusters": [],
+    "auto_create_topics_enable": true,
+    "cores_per_broker": 2,
+    "disk_per_broker": "500G",
+    "dynatrace_api_token": "",
+    "dynatrace_api_url": "",
+    "dynatrace_enabled": false,
+    "dynatrace_environment_id": "",
+    "log_retention_hours": 168,
+    "message_max_bytes": "1048588",
+    "min_insync_replicas": 2,
+    "number_of_brokers": 3,
+    "productive": false,
+    "public_ip": true
+  }
+}
